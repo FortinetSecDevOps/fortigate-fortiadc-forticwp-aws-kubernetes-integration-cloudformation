@@ -56,11 +56,11 @@ The high-level building blocks for networking within Kubernetes are:
 
 Here is a high-level diagram showing a 2 node cluster with the Calico CNI plugin.
 
-![Calico CNI](https://raw.githubusercontent.com/FortinetSecDevOps/fortigate-fortiadc-forticwp-aws-kubernetes-integration-cloudformation/master/content/calico-cni.png#gh-light-mode-only)
+![Calico CNI](./content/calico-cni.png)
 
 Here is a similar diagram showing the same cluster but using the AWS VPC CNI plugin.  Notice how each pod now has a routable IP address.
 
-![VPC CNI](https://raw.githubusercontent.com/FortinetSecDevOps/fortigate-fortiadc-forticwp-aws-kubernetes-integration-cloudformation/master/content/aws-vpc-cni.png#gh-light-mode-only)
+![VPC CNI](./content/aws-vpc-cni.png)
 
 Below are reference documentation and videos for a deeper dive on Kubernetes networking:
   - [K8s Networking on AWS](https://www.youtube.com/watch?v=7LRtytR6ZbA)
