@@ -63,14 +63,14 @@ Here is a similar diagram showing the same cluster but using the AWS VPC CNI plu
 ![VPC CNI](./content/aws-vpc-cni.png)
 
 Below are reference documentation and videos for a deeper dive on Kubernetes networking:
-[K8s Networking on AWS](https://www.youtube.com/watch?v=7LRtytR6ZbA)
-[K8s Services](https://www.youtube.com/watch?v=NFApeJRXos4)
-[K8s Ingress Networking](https://www.youtube.com/watch?v=40VfZ_nIFWI)
-[K8s Service Types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
-[K8s Ingress Networking](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-[K8s Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
-[EKS Pod Networking](https://docs.aws.amazon.com/eks/latest/userguide/pod-networking.html )
-[AWS VPC CNI](https://github.com/aws/amazon-vpc-cni-K8s)
+  - [K8s Networking on AWS](https://www.youtube.com/watch?v=7LRtytR6ZbA)
+  - [K8s Services](https://www.youtube.com/watch?v=NFApeJRXos4)
+  - [K8s Ingress Networking](https://www.youtube.com/watch?v=40VfZ_nIFWI)
+  - [K8s Service Types](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
+  - [K8s Ingress Networking](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+  - [K8s Ingress Controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
+  - [EKS Pod Networking](https://docs.aws.amazon.com/eks/latest/userguide/pod-networking.html )
+  - [AWS VPC CNI](https://github.com/aws/amazon-vpc-cni-K8s)
 
 The SDN connector accesses Kubernetes control plain which uses role-based access for authentication.  An RBAC Role or ClusterRole contains rules that represent a set of permissions on resources.  The main difference between the two roles is that Roles are bound to a namespace while ClusterRoles are not.  Generally, FortiXYZ products will use ClusterRoles to access deployments across multiple namespaces.
 
@@ -86,10 +86,10 @@ Finally, tokens can be pulled from secrets tied to subjects to get credentials f
 When working with managed K8s clusters such as EKS, AKS, and GKE, config maps are typically used to map cloud provider IAM roles to K8s users\groups.  This will be used when integrating CWP with managed K8s clusters in EKS.
 
 Below are reference documentation for a deeper dive on Kubernetes RBAC:
-[K8s RBAC](https://Kubernetes.io/docs/reference/access-authn-authz/rbac/)
-[K8s Authorization](https://Kubernetes.io/docs/reference/access-authn-authz/authorization/)
-[EKS add user role](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html)
-[FortiCWP ConfigMap for EKS](https://docs.fortinet.com/document/forticwp/21.2.0/online-help/698697/add-iam-role-to-Kubernetes-configmap)
+  - [K8s RBAC](https://Kubernetes.io/docs/reference/access-authn-authz/rbac/)
+  - [K8s Authorization](https://Kubernetes.io/docs/reference/access-authn-authz/authorization/)
+  - [EKS add user role](https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html)
+  - [FortiCWP ConfigMap for EKS](https://docs.fortinet.com/document/forticwp/21.2.0/online-help/698697/add-iam-role-to-Kubernetes-configmap)
 
 ## Template Deployment
 Before attempting to create a stack with the template, a few prerequisites should be checked to ensure a successful deployment:
