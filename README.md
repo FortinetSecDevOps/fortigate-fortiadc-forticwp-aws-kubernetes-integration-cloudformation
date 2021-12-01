@@ -56,11 +56,11 @@ The high-level building blocks for networking within Kubernetes are:
 
 Here is a high-level diagram showing a 2 node cluster with the Calico CNI plugin.
 
-![Calico CNI](./content/calico-cni.png)
+![Calico CNI](./content/calico-cni.png#gh-light-mode-only)
 
 Here is a similar diagram showing the same cluster but using the AWS VPC CNI plugin.  Notice how each pod now has a routable IP address.
 
-![VPC CNI](./content/aws-vpc-cni.png)
+![VPC CNI](./content/aws-vpc-cni.png#gh-light-mode-only)
 
 Below are reference documentation and videos for a deeper dive on Kubernetes networking:
   - [K8s Networking on AWS](https://www.youtube.com/watch?v=7LRtytR6ZbA)
