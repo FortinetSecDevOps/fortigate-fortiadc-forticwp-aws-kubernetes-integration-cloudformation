@@ -1845,8 +1845,8 @@
 				"LicenseType": {
 					"Fn::If": [
 						"FortiADCLicenseTypeBYOL",
-						"FADC-AWS-BYOL-6.0.*",
-						"FADC-AWS-PAYG-1gbps-6.0.*"
+						"FADC-AWS-BYOL-6.1.*",
+						"FADC-AWS-PAYG-1gbps-6.1.*"
 					]
 				}
 			}
