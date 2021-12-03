@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v1.0) AWS CFT to deploy a VPC with 2 subnets (Public, Private) across 2x Availability Zones.",
+	"Description": "(v1.2) AWS CFT to deploy a VPC with 2 subnets (Public, Private) across 2x Availability Zones.",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -1845,8 +1845,8 @@
 				"LicenseType": {
 					"Fn::If": [
 						"FortiADCLicenseTypeBYOL",
-						"FADC-AWS-BYOL-6.1.*",
-						"FADC-AWS-PAYG-1gbps-6.1.*"
+						"FADC-AWS-BYOL-6.2.*",
+						"FADC-AWS-PAYG-1gbps-6.2.*"
 					]
 				}
 			}
