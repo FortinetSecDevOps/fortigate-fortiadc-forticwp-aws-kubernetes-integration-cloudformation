@@ -377,7 +377,7 @@ Next, navigate to Configure > Kubernetes Cluster > Add New.  The easiest and fas
 
 You can run the commands below with your unique token to deploy the FortiCWP Kubernetes Agents and watch the pods eventually go into running status.
 
-    curl https://forticwp-kubernetes-agent.s3-us-west-2.amazonaws.com/linux/fcli --output fcli
+    curl https://forticwp-kubernetes-agent.s3.amazonaws.com/linux/fcli --output fcli
     chmod +x fcli
     ./fcli deploy kubernetes --token <-your-cwp-token-> --region global
     watch kubectl get pods -n fortinet
